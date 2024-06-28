@@ -1,6 +1,4 @@
 /*archivo css*/
-/*reseteo del codigo para unificar los espacios en todos los navegadores
-para poner negrita font-weight: bold;*/
 *{
     padding: 0; 
     margin: 0;
@@ -38,7 +36,7 @@ h5{
     font-family: "fuente1";
      color:#111011be ;
      font-size: 1rem;
-     color: #1f27a5e5;
+     
 } 
 
 h2{
@@ -103,35 +101,32 @@ nav {
 
 /*-----------------------------------------*/
 /*---------------CSS PAGE INICIO MAIN------*/
-.index_contenedor{
-    position:relative;
-    width: 100%;
-    padding-bottom: 30px;
-}
+.image-container {
+            position: relative;
+            width: 100%;
+        }
+        .full-width-img {
+            width: 100%;
+            height: auto;
+        }
+        .text-overlay {
+            font-family:"fuente1";
+            position: absolute;
+            top: 48%;
+            font-style:oblique;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            color: #0e0d0d;
+            padding: 10px;
+            font-size:1.2rem;
+            text-align:left ;
+            border-radius: 5px;
+            overflow:auto;
+            width: 500px;
+            line-height: 1.6;
+            height: auto;
+        }
 
-.index_img{
-    width: 100%;
-    height: auto;
-    object-fit:cover;
-    display: block;
-    margin:auto;
-}
-
-p {
-    color:#161616;
-    font-family:"fuente1";
-    font-size: 1.2rem;
-    font-style:oblique;
-    display:inline-block;
-    width: 500px;
-    height: auto;
-    position: absolute;
-    top:60px;
-    left: 10Px;
-    text-align: left;
-    overflow:auto;
-   
-}
 
 .grid-container {
     display: grid;
@@ -144,12 +139,13 @@ p {
     text-align: center;
     width: 90%;
     height: auto;
-    opacity: .5;
+    opacity: .8;
+    border-radius: 10px;
 }
 
 
 .grid-item iframe:hover{
-    opacity: 1;
+    opacity: 1.5;
     border:solid #8f8b8b 2px;
     border-radius: 10px;
 }
@@ -158,28 +154,28 @@ p {
 
 /*-------------------CSS FOOTER------------*/
 footer {
-    background-color: #4249a5e5; /* Color de fondo del footer */
-    color: #fff; /* Color del texto */
-    padding: 35px; /* Espaciado interno */
-    text-align: center; /* Centrar contenido */
+    background-color: #4249a5e5; 
+    color: #fff; 
+    padding: 35px; 
+    text-align: center; 
     font-family: "fuente1";
 }
 .enlaces a {
-    color: #fff; /* Color del texto de los enlaces */
-    text-decoration: none; /* Sin subrayado */
-    margin: 0 10px; /* Espaciado entre los enlaces */
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 10px; 
     border-bottom: none;
 }
 
 .enlaces img {
-    vertical-align:middle; /* Alinea verticalmente los iconos con el texto */
-    width: 35px; /* Ajusta el tamaño de los iconos según sea necesario */
-    height: auto; /* Mantiene la proporción del icono */
-    margin-right: 5px; /* Espacio entre el icono y el texto */
+    vertical-align:middle; 
+    width: 35px; 
+    height: auto; 
+    margin-right: 5px; 
 }
 
 .enlaces a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+    text-decoration: underline; 
 }
 
 
@@ -323,7 +319,23 @@ input[type=submit] {
     .grid-container {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
     }
+    /* para que baje el parrafo del main */
+    .text-overlay {
+        position: static;
+        transform: none;
+        width: 100%;
+        font-size: .9rem;
+        left: 0;
+        top: 0;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #c5c7c5
+    }
+    .texto_h1{
+        font-size: 1.8rem;
+    }
 }
+
  
 
 @media screen and (max-width: 480px) {    
@@ -332,6 +344,9 @@ input[type=submit] {
    }
    .grid-container {
         grid-template-columns: repeat(1, 1fr); /* Dos columnas de igual tamaño */
+    }
+    .texto_h1{
+        font-size: 1.3rem;
     }
 }
 
