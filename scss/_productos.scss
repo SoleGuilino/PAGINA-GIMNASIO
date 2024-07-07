@@ -1,0 +1,33 @@
+@import "header";
+main{
+    h2{
+        padding: 30px;
+        font-family: "fuente1";
+        font-size: 1.4rem; 
+        text-align: center;
+    }
+    .productos{
+        text-align: center;
+        width: 80%; 
+        height: auto; /* Para mantener la proporción */
+        opacity: .5;
+        &:hover {
+            opacity: 1;
+            border:solid white 2px;
+            border-radius: 10px;
+        }
+        
+    
+    }
+    h3{
+        font-family: "fuente1";
+         color:#000000be ;
+         font-size: 1.3rem;
+    }
+
+
+
+}
+
+
+@import "footer";

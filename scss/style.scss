@@ -1,0 +1,103 @@
+/*archivo css*/
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$color_fondo:#4249a5e5;
+@import "mediaquery";
+
+/*-----------------FUENTES-------------------*/
+@font-face {
+    font-family: "fuente1";
+    src: url("../fuente/Dekko-Regular/Dekko-Regular.ttf")
+}
+
+@font-face {
+    font-family: "fuente2";
+    src: url("../fuente/Cairo_Play/CairoPlay-VariableFont_slnt\,wght.ttf")
+
+}
+/*----------------------------------*/
+/*------------INDEX ----------------*/
+body{
+    background-color: #c5c7c5;
+    font-family: "fuente1";
+}
+
+@import "header";
+/*----------------------------------*/
+/*---------------Main index---------*/
+
+main{
+    .image-container {
+        position: relative;
+        width: 100%;
+        .full-width-img {
+            width: 100%;
+            height: auto;
+        }
+        .text-overlay {
+            font-family:"fuente1";
+            position: absolute;
+            top: 48%;
+            font-style:oblique;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            color: #0e0d0d;
+            padding: 10px;
+            font-size:1.2rem;
+            text-align:left ;
+            border-radius: 5px;
+            overflow:auto;
+            width: 500px;
+            line-height: 1.6;
+            height: auto;
+            @include tablet{
+                position: static;
+                transform: none;
+                width: 100%;
+                font-size: .9rem;
+                left: 0;
+                top: 0;
+                margin-top: 10px;
+                padding: 10px;
+                background-color: #c5c7c5
+            }
+        }
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+        gap: 10px; /* Espacio entre elementos */
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr); 
+        }
+        @include movil{
+            grid-template-columns: repeat(1, 1fr); 
+        }
+        .grid-item {
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            height: auto;
+            opacity: .8;
+            border-radius: 10px;
+            &:hover{
+                opacity: 1.5;
+                border:solid #8f8b8b 2px;
+                border-radius: 10px;
+            }
+        }
+    }
+    
+}
+/*----------------------------------*/
+/*--------------FOOTER------------*/
+@import "footer";
+@import "servicios";
+@import "productos";
+@import "nosotros";
+@import "contacto"
+

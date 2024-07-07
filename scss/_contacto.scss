@@ -1,0 +1,63 @@
+@import "header";
+main{
+    h2{
+        padding: 30px;
+        font-family: "fuente1";
+        font-size: 1.4rem; 
+        text-align: center;
+    }
+    .contenedor_contacto{
+        display: flex; 
+        align-items: flex-start; 
+        justify-content:space-around; 
+        margin-bottom: 20px;
+        @include tablet{
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .formulario{
+            width: 100%; /* Ancho del formulario */
+            padding: 30px;
+            box-sizing:border-box; /* Incluir padding en el ancho especificado */
+            border: 2px solid #ccc;
+            @include tablet{
+                width: 100%; 
+                lign-items: center;
+            }
+            input[type=text],textarea{
+                width: 80%;
+                padding: 10px;
+                margin: 8px 10px;
+                box-sizing: border-box;
+                border-radius: 10px;
+                &:focus {
+                border-color:#333;
+                }
+            }
+            input[type=submit] {
+                    padding:10px 20px; 
+                    background:#4249a5e5; 
+                    color: white;
+                    border:1 none;
+                    cursor:pointer;
+                    -webkit-border-radius: 5px;
+                    border-radius: 5px; 
+            }
+        }
+        .mapa {
+            width: 100%; /* Ancho del mapa */
+            border: 1px solid #ccc;
+            padding: 30px;
+            @include tablet{
+                width: 100%; 
+                lign-items: center;
+            }
+
+        }
+    }
+    
+
+}
+
+
+@import "footer";

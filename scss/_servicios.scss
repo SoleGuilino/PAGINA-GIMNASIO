@@ -1,0 +1,55 @@
+@import "header";
+main{
+    h2{
+        padding: 30px;
+        font-family: "fuente1";
+        font-size: 1.4rem; 
+        text-align: center;
+    }
+    .servicios_contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+        grid-gap: 40px; /* Espacio entre las imágenes */
+        @include tablet{
+            grid-template-columns: 1fr 1fr;
+        }
+        @include movil{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .servicios_imagen{
+            text-align: center;
+            img {
+                width: 80%; 
+                height: 55%; /* Para mantener la proporción */
+                opacity: .5;
+                &:hover{
+                    opacity: 1;
+                    border:solid white 2px;
+                    border-radius: 10px;
+                }
+            }
+            h3,h4,h5{
+                font-family: "fuente1";
+                color:#000000be ;
+                font-size: 1.3rem;
+                @include tablet{
+                    width: 100%;
+                    font-size: 1rem;
+                    left: 0;
+                    top: 0;
+                    margin-top: 10px;
+                    padding: 10px;
+                    background-color: #c5c7c5
+                }
+                
+            }
+
+        }
+    }
+
+  
+    
+}
+
+
+@import "footer";

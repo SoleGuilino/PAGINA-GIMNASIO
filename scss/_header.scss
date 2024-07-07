@@ -1,0 +1,45 @@
+header{
+    background-color:$color_fondo;
+    .logo{
+        width: 30%;
+        margin: 10px;
+        border-radius:30%;
+        img {
+            max-width: 80%; /* Ajustar según el tamaño real del logo */
+            height: auto;
+            vertical-align:middle;
+        }
+    }
+    .texto_h1{
+        text-align: center;
+        font-family:"fuente2";
+        font-size: 2.5em;
+        white-space: nowrap;
+        @include tablet{
+            font-size: 1.8rem;
+        }
+        @include movil{
+            font-size: 1.3rem;
+        }
+
+    }
+    #navbarNav{
+        .nav-item .nav-link {
+            font-family: "fuente1";
+            font-size:1rem;
+            text-decoration:none;
+            color: #dfdcdc;   
+            &:hover{
+                color:white;
+            }
+            a {
+                font-family: "fuente1";
+                font-size:1.2rem;
+                text-decoration:none;
+                margin:5px;
+                padding:5px;
+                color: #dfdcdc;   
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import "header";
+main{
+    .nosotros_contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 30px;
+        h2{
+            padding: 30px;
+            font-family: "fuente1";
+            font-size: 1.4rem; 
+            text-align: center;
+        }
+        .nosotros_imagen_y_parrafo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            @include tablet{
+                width: 95%;
+            }
+            .nosotros_imagen {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                margin: auto;
+            }
+            .nosotros_parrafo {
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+@import "footer";

@@ -1,0 +1,24 @@
+footer {
+    background-color: $color_fondo; 
+    color: #fff; 
+    padding: 35px; 
+    text-align: center; 
+    font-family: "fuente1";
+    .enlaces{
+        a{
+            color: #fff; 
+            text-decoration: none; 
+            margin: 0 10px; 
+            border-bottom: none;
+            &:hover {
+                text-decoration: underline; 
+            }
+        }
+        img{
+            vertical-align:middle; 
+            width: 35px; 
+            height: auto; 
+            margin-right: 5px; 
+        }
+    }
+}
