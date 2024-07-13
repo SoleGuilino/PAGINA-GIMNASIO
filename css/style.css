@@ -330,6 +330,18 @@ header #navbarNav .nav-item .nav-link a {
   color: #dfdcdc;
 }
 
+/* definicion de la animacion*/
+@keyframes prod {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
 main h2 {
   padding: 30px;
   font-family: "fuente1";
@@ -337,6 +349,9 @@ main h2 {
   text-align: center;
 }
 main .productos {
+  animation-name: prod;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   text-align: center;
   width: 80%;
   height: auto; /* Para mantener la proporción */
