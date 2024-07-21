@@ -49,24 +49,26 @@ main{
             font-style:oblique;
             left: 20%;
             transform: translate(-50%, -50%);
-            color: #0e0d0d;
-            padding: 10px;
+            color: #cecccc;
+            padding: 60px 20px 20px 20px;
             font-size:1.3rem;
             text-align:left ;
             border-radius: 5px;
             overflow:auto;
-            width: 500px;
+            width: 420px;
             line-height: 1.6;
-            height: auto;
+            height: 600px;
             @include tablet{
+                color: #4d4c4c;
                 position: static;
                 transform: none;
-                width: 100%;
+                width: 90%;
                 font-size: 1rem;
-                left: 0;
+                left: 5%;
                 top: 0;
                 margin-top: 10px;
-                padding: 10px;
+                padding: 10px 10px 10px 25px;
+                padding-left: 5px;
                 background-color: $color_fondo_main
             }
         }
